@@ -8,7 +8,7 @@
  * *@c:character targeted
  * *
  * *Return: returns pointer to first occcurence of c
-*/
+ */
 char *_strchr(char *s, char c)
 {
 	int i;
