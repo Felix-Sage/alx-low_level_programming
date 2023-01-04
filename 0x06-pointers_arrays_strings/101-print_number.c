@@ -5,7 +5,7 @@ void print_uint(unsigned int n);
 /**
  * * print_number - Prints an integer
  * * @n: The integer to print
-*/
+ */
 
 void print_number(int n)
 {
@@ -20,7 +20,7 @@ void print_number(int n)
 /**
  * * print_uint - Prints an unsigned integer
  * * @n: The unsigned int to print
-*/
+ */
 
 void print_uint(unsigned int n)
 {
