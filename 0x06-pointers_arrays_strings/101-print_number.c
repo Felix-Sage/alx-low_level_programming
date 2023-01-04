@@ -1,30 +1,26 @@
-#include "main.h"
+/*
+ *  * File: 101-print_number.c
+ *   * Auth: Brennan D Baraban
+*/
 
-void print_uint(unsigned int n);
+#include "holberton.h"
 
 /**
- * * print_number - Prints an integer
- * * @n: The integer to print
- */
-
+ *  * print_number - Prints an integer.
+ *   * @n: The integer to be printed.
+*/
 void print_number(int n)
 {
-	if (n < 0)
-	{
-		_putchar('-');
-		n = -n;
-	}
-	print_uint((unsigned int) n);
+unsigned int num = n;
+
+if (n < 0)
+{
+_putchar('-');
+num = -num;
 }
 
-/**
- * * print_uint - Prints an unsigned integer
- * * @n: The unsigned int to print
- */
+if ((num / 10) > 0)
+print_number(num / 10);
 
-void print_uint(unsigned int n)
-{
-	if (n / 10 != 0)
-		print_uint(n / 10);
-	_putchar(n % 10 + '0');
+_putchar((num % 10) + '0');
 }
